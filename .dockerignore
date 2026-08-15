@@ -1,0 +1,9 @@
+.git
+.venv
+venv
+__pycache__
+mlruns
+mlartifacts
+docs
+tests
+.DS_Store

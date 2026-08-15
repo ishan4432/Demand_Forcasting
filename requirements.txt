@@ -1,0 +1,19 @@
+# Core scientific stack
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11          # gives us the Kolmogorov-Smirnov test (drift detection)
+scikit-learn>=1.3    # gives us the StandardScaler (feature normalization)
+
+# Deep learning
+torch>=2.2           # PyTorch — the LSTM model is built with this
+
+# Experiment tracking & model registry
+mlflow>=2.14         # logs every training run: params, metrics, model files
+
+# Serving
+fastapi>=0.110       # the web API that serves predictions
+uvicorn>=0.29        # the server that runs the FastAPI app
+pydantic>=2.5        # request/response validation for the API
+
+# Optional — pipeline orchestration (heavier install, see README)
+# zenml>=0.55

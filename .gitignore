@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data & artifacts (regenerate with: python -m src.data.generate_data)
+data/*.csv
+artifacts/
+mlruns/
+mlartifacts/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# MLflow local tracking database
+mlflow.db
