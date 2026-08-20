@@ -28,6 +28,7 @@ import numpy as np
 import pandas as pd
 import torch
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from src.config import CONFIG, ARTIFACTS_DIR, RAW_DATA_PATH
@@ -75,7 +76,12 @@ app = FastAPI(
     description="LSTM demand forecasts served from an MLflow-tracked model.",
     lifespan=lifespan,
 )
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class PredictRequest(BaseModel):
     days: int = Field(default=1, ge=1, le=30, description="How many days ahead to forecast")
