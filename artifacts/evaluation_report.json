@@ -1,0 +1,34 @@
+{
+  "folds": [
+    {
+      "fold": 1,
+      "lstm_mape": 10.28,
+      "baseline_mape": 14.34
+    },
+    {
+      "fold": 2,
+      "lstm_mape": 9.79,
+      "baseline_mape": 13.76
+    },
+    {
+      "fold": 3,
+      "lstm_mape": 9.49,
+      "baseline_mape": 13.88
+    },
+    {
+      "fold": 4,
+      "lstm_mape": 9.54,
+      "baseline_mape": 14.92
+    },
+    {
+      "fold": 5,
+      "lstm_mape": 9.47,
+      "baseline_mape": 14.44
+    }
+  ],
+  "lstm_mape_mean": 9.71,
+  "lstm_mape_ci95": 0.42,
+  "baseline_mape_mean": 14.27,
+  "baseline_mape_ci95": 0.58,
+  "relative_improvement_pct": 31.9
+}

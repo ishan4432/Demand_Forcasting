@@ -1,0 +1,16 @@
+{
+  "alpha": 0.05,
+  "reference_window": "same 30 days, 364 days earlier",
+  "detection_window_days": 30,
+  "reference_mean": 445.1,
+  "recent_mean": 520.84,
+  "checks": [
+    {
+      "column": "demand",
+      "ks_statistic": 0.5333,
+      "p_value": 0.0002933405491362055,
+      "drift_detected": true
+    }
+  ],
+  "any_drift": true
+}
